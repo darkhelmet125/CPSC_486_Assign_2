@@ -18,8 +18,7 @@ Unimplemented features:
 	
 
 Notes:
-	Assignment compiles with 2 warnings.
+	Assignment compiles with 1 warning.
 	Warnings:
 		-'gluLookat' is deprecated as of 10.9, use GLKMatrix4MakeLookAt
-		-'gluPerspectice' is deprecated as of 10.9, use GLKMatrix4MakePerspective
 I tried to implement the GLKMatrix4 functions from the GLKit.framework and it broke my program so it was not included.
