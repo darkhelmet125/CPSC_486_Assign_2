@@ -58,10 +58,16 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
             
             glTranslatef(entity->getPosition().x, entity->getPosition().y, entity->getPosition().z);
             
-            //bounce off of walls
+            //bounce off of left/right
             if((entity->getPosition().x >= 0.9f) || (entity->getPosition().x <=-0.9f))
             {
                 entity->setVelocity(makeVector3(-(entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }
+            
+            //bounce off of top/bottom
+            if((entity->getPosition().y >= 0.9f) || (entity->getPosition().y <=-0.9f))
+            {
+                entity->setVelocity(makeVector3(entity->getVelocity().x, -(entity->getVelocity().y), entity->getVelocity().z));
             }
             
             glRotatef(entity->getRotation().x, 0.0f, 0.0f, 1.0f);
