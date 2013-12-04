@@ -26,19 +26,19 @@ ResourceManager::ResourceManager()
     ShaderData *skyColor = new ShaderData(makeVector4(0.5f, 0.7f, 1.0f, 1.0f), makeVector3(0.0f, 20.0f, 0.0f));
     _shaderData->push_back(skyColor);
     
-    ShaderData *redishColor = new ShaderData(makeVector4(1.0f, 0.3f, 0.25f, 1.0f), makeVector3(0.0f, 0.0f, 10.0f));
+    ShaderData *redishColor = new ShaderData(makeVector4(1.0f, 0.3f, 0.25f, 1.0f), makeVector3(0.1f, 0.1f, 0.1f));
     _shaderData->push_back(redishColor);
     
-    ShaderData *greenishColor = new ShaderData(makeVector4(0.3f, 1.0f, 0.65f, 1.0f), makeVector3(0.0f, 0.0f, 0.1f));
+    ShaderData *greenishColor = new ShaderData(makeVector4(0.3f, 1.0f, 0.65f, 1.0f), makeVector3(0.1f, 0.1f, 0.2f));
     _shaderData->push_back(greenishColor);
     
-    ShaderData *darkishBlue = new ShaderData(makeVector4(0.1f, 0.3f, 1.0f, 1.0f), makeVector3(0.0f, 0.0f, 1.0f));
+    ShaderData *darkishBlue = new ShaderData(makeVector4(0.1f, 0.3f, 1.0f, 1.0f), makeVector3(0.1f, 0.1f, 0.3f));
     _shaderData->push_back(darkishBlue);
     
-    ShaderData *pinkishColor = new ShaderData(makeVector4(1.0f, 0.7f, 0.7f, 1.0f), makeVector3(0.0f, 0.0f, 2.0f));
+    ShaderData *pinkishColor = new ShaderData(makeVector4(1.0f, 0.7f, 0.7f, 1.0f), makeVector3(0.1f, 0.1f, 0.4f));
     _shaderData->push_back(pinkishColor);
     
-    ShaderData *grayishColor = new ShaderData(makeVector4(0.3f, 0.3f, 0.3f, 1.0f), makeVector3(0.0f, 0.0f, 3.0f));
+    ShaderData *grayishColor = new ShaderData(makeVector4(0.3f, 0.3f, 0.3f, 1.0f), makeVector3(0.1f, 0.1f, 0.5f));
     _shaderData->push_back(grayishColor);
     
     //VertexBufferArray

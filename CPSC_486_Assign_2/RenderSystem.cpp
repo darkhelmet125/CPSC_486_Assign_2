@@ -34,7 +34,7 @@ void RenderSystem::setCurrentCamera(Entity *newCamera)
 
 void RenderSystem::render(std::vector<Entity *> *entityArray)
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT);
     
     for (std::vector<Entity *>::iterator iterator = entityArray->begin(); iterator != entityArray->end(); ++iterator)
     {
@@ -57,6 +57,12 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
                       _currentCamera->getUpVector().z);
             
             glTranslatef(entity->getPosition().x, entity->getPosition().y, entity->getPosition().z);
+            
+            //bounce off of walls
+            if((entity->getPosition().x >= 0.9f) || (entity->getPosition().x <=-0.9f))
+            {
+                entity->setVelocity(makeVector3(-(entity->getVelocity().x), entity->getVelocity().y, entity->getVelocity().z));
+            }
             
             glRotatef(entity->getRotation().x, 0.0f, 0.0f, 1.0f);
             glRotatef(entity->getRotation().y, 0.0f, 1.0f, 0.0f);
@@ -84,11 +90,6 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
     glfwPollEvents();
 }
 
-void RenderSystem::checkForCollision()
-{
-    //stuff
-}
-
 RenderSystem& RenderSystem::getRenderSystem()
 {
     static RenderSystem *renderSystem = NULL;
@@ -99,12 +100,12 @@ RenderSystem& RenderSystem::getRenderSystem()
         glClearColor(0.0f, 0.7f, 1.0f, 1.0f);
         
         glMatrixMode(GL_PROJECTION);
-        gluPerspective(75.0f, 850.0f/850.0f, 0.1f, 5.0f);
+        glOrtho(-1.0f, 1.0f, -1.0f, 1.0f, 2, -2);
+        //gluPerspective(75.0f, 850.0f/850.0f, 2, -2);
         glViewport(0.0f, 0.0f, 850.0f, 850.0f);
         glMatrixMode(GL_MODELVIEW);
         
         glEnable(GL_CULL_FACE);
-        glEnable(GL_DEPTH_TEST);
     }
     
     return *renderSystem;

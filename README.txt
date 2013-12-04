@@ -7,9 +7,9 @@ Language:	C/C++
 Tools:	OpenGL, GLFW, Xcode 5
 
 Implemented features:
-	'q' and 'esc' quit the program
-	Up arrow moves camera forward
-	Down arrow moves camera backwards
+	'q' quit the program
+	Up arrow moves camera forward	//unsure as to why this should be implemented
+	Down arrow moves camera backwards	//unsure as to why this should be implemented
 	
 
 Unimplemented features:

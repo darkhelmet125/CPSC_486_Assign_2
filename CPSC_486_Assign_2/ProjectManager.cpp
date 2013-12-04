@@ -66,7 +66,7 @@ void ProjectManager::runGameLoop()
         
         _renderSystem->render(_scene->getChildren());
         
-        if(glfwGetKey(_window, GLFW_KEY_ESCAPE) || glfwGetKey(_window, GLFW_KEY_Q))
+        if(glfwGetKey(_window, GLFW_KEY_Q))
             _running = false;
     }
 }

@@ -36,7 +36,6 @@ public:
     void setCurrentCamera(Entity *newCamera);
     
     void render(std::vector<Entity *> *entityArray);
-    void checkForCollision();
     
     static RenderSystem& getRenderSystem();
     static void destroyRenderSystem();
