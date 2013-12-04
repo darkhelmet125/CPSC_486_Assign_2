@@ -86,7 +86,7 @@ ProjectManager& ProjectManager::getProjectManager()
         glfwWindowHint(GLFW_ALPHA_BITS, 8);
         glfwWindowHint(GLFW_SAMPLES, 16);
         glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-        GLFWwindow *window = glfwCreateWindow(1280, 720, "CPSC 486 Assign 2", NULL, NULL);
+        GLFWwindow *window = glfwCreateWindow(850, 850, "CPSC 486 Assign 2", NULL, NULL);
         glfwMakeContextCurrent(window);
         
         projectManager = new ProjectManager(true);

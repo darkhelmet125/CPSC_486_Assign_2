@@ -99,8 +99,8 @@ RenderSystem& RenderSystem::getRenderSystem()
         glClearColor(0.0f, 0.7f, 1.0f, 1.0f);
         
         glMatrixMode(GL_PROJECTION);
-        gluPerspective(75.0f, 1280.0f/720.0f, 0.1f, 1000.0f);
-        glViewport(0.0f, 0.0f, 1280.0f, 720.0f);
+        gluPerspective(75.0f, 850.0f/850.0f, 0.1f, 5.0f);
+        glViewport(0.0f, 0.0f, 850.0f, 850.0f);
         glMatrixMode(GL_MODELVIEW);
         
         glEnable(GL_CULL_FACE);
