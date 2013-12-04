@@ -9,6 +9,7 @@
 #include "ProjectManager.h"
 #define Updates_Per_Second 60.0f
 
+//private
 ProjectManager::ProjectManager(bool running):
 _running(running), _window(glfwGetCurrentContext()),
 _renderSystem(&RenderSystem::getRenderSystem()),
@@ -26,6 +27,7 @@ ProjectManager::~ProjectManager()
     PlayerInputSystem::destroyPlayerInputSystem();
 }
 
+//public
 void ProjectManager::runGameLoop()
 {
     double lastTime = glfwGetTime();
@@ -43,9 +45,19 @@ void ProjectManager::runGameLoop()
             
             _running = !glfwWindowShouldClose(_window);
             
-            /*      bouncing squares        */
+            if(glfwGetKey(_window, GLFW_KEY_UP))
+            {
+                _cameraSystem->getCurrentCamera()->setPosition(makeVector3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z - 0.15)));
+                
+                std::cout<<"camera position: "<<_cameraSystem->getCurrentCamera()->getPosition().x<<", "<<_cameraSystem->getCurrentCamera()->getPosition().y<<", "<<_cameraSystem->getCurrentCamera()->getPosition().z<<std::endl;
+            }
             
-            /*      end bouncing squares        */
+            if(glfwGetKey(_window, GLFW_KEY_DOWN))
+            {
+                _cameraSystem->getCurrentCamera()->setPosition(makeVector3(_cameraSystem->getCurrentCamera()->getPosition().x, _cameraSystem->getCurrentCamera()->getPosition().y, (_cameraSystem->getCurrentCamera()->getPosition().z + 0.15)));
+                
+                std::cout<<"camera position: "<<_cameraSystem->getCurrentCamera()->getPosition().x<<", "<<_cameraSystem->getCurrentCamera()->getPosition().y<<", "<<_cameraSystem->getCurrentCamera()->getPosition().z<<std::endl;
+            }
             
             _movementSystem->update(_scene->getChildren());
             

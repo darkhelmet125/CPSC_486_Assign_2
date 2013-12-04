@@ -23,7 +23,6 @@
 class RenderSystem
 {
 private:
-    
     GLFWwindow *_window;
     
     CameraSystem *_cameraSystem;
@@ -33,11 +32,11 @@ private:
     ~RenderSystem();
     
 public:
-    
     Entity *getCurrentCamera();
     void setCurrentCamera(Entity *newCamera);
     
     void render(std::vector<Entity *> *entityArray);
+    void checkForCollision();
     
     static RenderSystem& getRenderSystem();
     static void destroyRenderSystem();

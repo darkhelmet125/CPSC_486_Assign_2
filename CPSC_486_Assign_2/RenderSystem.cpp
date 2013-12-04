@@ -9,18 +9,7 @@
 #include "RenderSystem.h"
 #include "ShaderInterface.h"
 
-
-Entity* RenderSystem::getCurrentCamera()
-{
-    return _currentCamera;
-}
-
-void RenderSystem::setCurrentCamera(Entity *newCamera)
-{
-    _currentCamera = newCamera;
-}
-
-
+//private
 RenderSystem::RenderSystem(): _window(glfwGetCurrentContext()),
 _cameraSystem(&CameraSystem::getCameraSystem())
 {
@@ -29,6 +18,18 @@ _cameraSystem(&CameraSystem::getCameraSystem())
 
 RenderSystem::~RenderSystem()
 {
+    
+}
+
+//public
+Entity* RenderSystem::getCurrentCamera()
+{
+    return _currentCamera;
+}
+
+void RenderSystem::setCurrentCamera(Entity *newCamera)
+{
+    _currentCamera = newCamera;
 }
 
 void RenderSystem::render(std::vector<Entity *> *entityArray)
@@ -83,6 +84,11 @@ void RenderSystem::render(std::vector<Entity *> *entityArray)
     glfwPollEvents();
 }
 
+void RenderSystem::checkForCollision()
+{
+    //stuff
+}
+
 RenderSystem& RenderSystem::getRenderSystem()
 {
     static RenderSystem *renderSystem = NULL;
@@ -93,7 +99,7 @@ RenderSystem& RenderSystem::getRenderSystem()
         glClearColor(0.0f, 0.7f, 1.0f, 1.0f);
         
         glMatrixMode(GL_PROJECTION);
-        gluPerspective(75.0f, 1280.0f/720.0f, 1, 1000);
+        gluPerspective(75.0f, 1280.0f/720.0f, 0.1f, 1000.0f);
         glViewport(0.0f, 0.0f, 1280.0f, 720.0f);
         glMatrixMode(GL_MODELVIEW);
         
