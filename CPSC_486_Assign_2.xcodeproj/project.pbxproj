@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8E4165184EB9F100BEB3B4 /* CameraSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4143184EB9F000BEB3B4 /* CameraSystem.cpp */; };
+		3D8E4168184EB9F100BEB3B4 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4147184EB9F000BEB3B4 /* Entity.cpp */; };
+		3D8E4169184EB9F100BEB3B4 /* MovementSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4149184EB9F000BEB3B4 /* MovementSystem.cpp */; };
+		3D8E416A184EB9F100BEB3B4 /* PlayerInputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E414C184EB9F000BEB3B4 /* PlayerInputSystem.cpp */; };
+		3D8E416B184EB9F100BEB3B4 /* ProjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E414E184EB9F000BEB3B4 /* ProjectManager.cpp */; };
+		3D8E416C184EB9F100BEB3B4 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4150184EB9F000BEB3B4 /* RenderSystem.cpp */; };
+		3D8E416D184EB9F100BEB3B4 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4152184EB9F100BEB3B4 /* ResourceManager.cpp */; };
+		3D8E416E184EB9F100BEB3B4 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4154184EB9F100BEB3B4 /* Scene.cpp */; };
+		3D8E416F184EB9F100BEB3B4 /* ShaderData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4156184EB9F100BEB3B4 /* ShaderData.cpp */; };
+		3D8E4170184EB9F100BEB3B4 /* ShaderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4158184EB9F100BEB3B4 /* ShaderInterface.cpp */; };
+		3D8E4171184EB9F100BEB3B4 /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E415A184EB9F100BEB3B4 /* ShaderLoader.cpp */; };
+		3D8E4174184EB9F100BEB3B4 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E415E184EB9F100BEB3B4 /* Vector3.cpp */; };
+		3D8E4175184EB9F100BEB3B4 /* Vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4160184EB9F100BEB3B4 /* Vector4.cpp */; };
+		3D8E4176184EB9F100BEB3B4 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E4162184EB9F100BEB3B4 /* VertexBuffer.cpp */; };
+		3D8E4178184EBAB300BEB3B4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E4177184EBAB300BEB3B4 /* OpenGL.framework */; };
+		3D8E417A184EBABA00BEB3B4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E4179184EBABA00BEB3B4 /* AppKit.framework */; };
+		3D8E417C184EBAC000BEB3B4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E417B184EBAC000BEB3B4 /* IOKit.framework */; };
+		3D8E417E184EBADA00BEB3B4 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8E417D184EBADA00BEB3B4 /* libglfw3.a */; };
+		3D8E4181184EC04100BEB3B4 /* ColorShader.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E4145184EB9F000BEB3B4 /* ColorShader.fsh */; };
+		3D8E4182184EC04100BEB3B4 /* ColorShader.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E4146184EB9F000BEB3B4 /* ColorShader.vsh */; };
+		3D8E4183184EC04100BEB3B4 /* SimpleLightShader.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E415C184EB9F100BEB3B4 /* SimpleLightShader.fsh */; };
+		3D8E4184184EC04100BEB3B4 /* SimpleLightShader.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E415D184EB9F100BEB3B4 /* SimpleLightShader.vsh */; };
 		3DE24058184DB9490028B1D7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24057184DB9490028B1D7 /* main.cpp */; };
 		3DE2405A184DB9490028B1D7 /* CPSC_486_Assign_2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DE24059184DB9490028B1D7 /* CPSC_486_Assign_2.1 */; };
 /* End PBXBuildFile section */
@@ -14,17 +36,60 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		3DE24052184DB9490028B1D7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				3D8E4181184EC04100BEB3B4 /* ColorShader.fsh in CopyFiles */,
+				3D8E4182184EC04100BEB3B4 /* ColorShader.vsh in CopyFiles */,
+				3D8E4183184EC04100BEB3B4 /* SimpleLightShader.fsh in CopyFiles */,
+				3D8E4184184EC04100BEB3B4 /* SimpleLightShader.vsh in CopyFiles */,
 				3DE2405A184DB9490028B1D7 /* CPSC_486_Assign_2.1 in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D8E4143184EB9F000BEB3B4 /* CameraSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraSystem.cpp; sourceTree = "<group>"; };
+		3D8E4144184EB9F000BEB3B4 /* CameraSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSystem.h; sourceTree = "<group>"; };
+		3D8E4145184EB9F000BEB3B4 /* ColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.fsh; sourceTree = "<group>"; };
+		3D8E4146184EB9F000BEB3B4 /* ColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorShader.vsh; sourceTree = "<group>"; };
+		3D8E4147184EB9F000BEB3B4 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		3D8E4148184EB9F000BEB3B4 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		3D8E4149184EB9F000BEB3B4 /* MovementSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovementSystem.cpp; sourceTree = "<group>"; };
+		3D8E414A184EB9F000BEB3B4 /* MovementSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementSystem.h; sourceTree = "<group>"; };
+		3D8E414B184EB9F000BEB3B4 /* PlaneVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneVertices.h; sourceTree = "<group>"; };
+		3D8E414C184EB9F000BEB3B4 /* PlayerInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInputSystem.cpp; sourceTree = "<group>"; };
+		3D8E414D184EB9F000BEB3B4 /* PlayerInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerInputSystem.h; sourceTree = "<group>"; };
+		3D8E414E184EB9F000BEB3B4 /* ProjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectManager.cpp; sourceTree = "<group>"; };
+		3D8E414F184EB9F000BEB3B4 /* ProjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectManager.h; sourceTree = "<group>"; };
+		3D8E4150184EB9F000BEB3B4 /* RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderSystem.cpp; sourceTree = "<group>"; };
+		3D8E4151184EB9F100BEB3B4 /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSystem.h; sourceTree = "<group>"; };
+		3D8E4152184EB9F100BEB3B4 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		3D8E4153184EB9F100BEB3B4 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		3D8E4154184EB9F100BEB3B4 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		3D8E4155184EB9F100BEB3B4 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		3D8E4156184EB9F100BEB3B4 /* ShaderData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderData.cpp; sourceTree = "<group>"; };
+		3D8E4157184EB9F100BEB3B4 /* ShaderData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderData.h; sourceTree = "<group>"; };
+		3D8E4158184EB9F100BEB3B4 /* ShaderInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderInterface.cpp; sourceTree = "<group>"; };
+		3D8E4159184EB9F100BEB3B4 /* ShaderInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderInterface.h; sourceTree = "<group>"; };
+		3D8E415A184EB9F100BEB3B4 /* ShaderLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
+		3D8E415B184EB9F100BEB3B4 /* ShaderLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLoader.h; sourceTree = "<group>"; };
+		3D8E415C184EB9F100BEB3B4 /* SimpleLightShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.fsh; sourceTree = "<group>"; };
+		3D8E415D184EB9F100BEB3B4 /* SimpleLightShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleLightShader.vsh; sourceTree = "<group>"; };
+		3D8E415E184EB9F100BEB3B4 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		3D8E415F184EB9F100BEB3B4 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		3D8E4160184EB9F100BEB3B4 /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector4.cpp; sourceTree = "<group>"; };
+		3D8E4161184EB9F100BEB3B4 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
+		3D8E4162184EB9F100BEB3B4 /* VertexBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		3D8E4163184EB9F100BEB3B4 /* VertexBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBuffer.h; sourceTree = "<group>"; };
+		3D8E4164184EB9F100BEB3B4 /* VertexData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexData.h; sourceTree = "<group>"; };
+		3D8E4177184EBAB300BEB3B4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3D8E4179184EBABA00BEB3B4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3D8E417B184EBAC000BEB3B4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3D8E417D184EBADA00BEB3B4 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = addGLFW/lib/libglfw3.a; sourceTree = "<group>"; };
+		3D8E4180184EBF6600BEB3B4 /* SquareVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareVertices.h; sourceTree = "<group>"; };
 		3DE24054184DB9490028B1D7 /* CPSC_486_Assign_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPSC_486_Assign_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE24057184DB9490028B1D7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3DE24059184DB9490028B1D7 /* CPSC_486_Assign_2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CPSC_486_Assign_2.1; sourceTree = "<group>"; };
@@ -35,6 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8E417E184EBADA00BEB3B4 /* libglfw3.a in Frameworks */,
+				3D8E417C184EBAC000BEB3B4 /* IOKit.framework in Frameworks */,
+				3D8E417A184EBABA00BEB3B4 /* AppKit.framework in Frameworks */,
+				3D8E4178184EBAB300BEB3B4 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +113,10 @@
 		3DE2404B184DB9490028B1D7 = {
 			isa = PBXGroup;
 			children = (
+				3D8E4179184EBABA00BEB3B4 /* AppKit.framework */,
+				3D8E417B184EBAC000BEB3B4 /* IOKit.framework */,
+				3D8E417D184EBADA00BEB3B4 /* libglfw3.a */,
+				3D8E4177184EBAB300BEB3B4 /* OpenGL.framework */,
 				3DE24056184DB9490028B1D7 /* CPSC_486_Assign_2 */,
 				3DE24055184DB9490028B1D7 /* Products */,
 			);
@@ -60,7 +133,42 @@
 		3DE24056184DB9490028B1D7 /* CPSC_486_Assign_2 */ = {
 			isa = PBXGroup;
 			children = (
+				3D8E4143184EB9F000BEB3B4 /* CameraSystem.cpp */,
+				3D8E4144184EB9F000BEB3B4 /* CameraSystem.h */,
+				3D8E4147184EB9F000BEB3B4 /* Entity.cpp */,
+				3D8E4148184EB9F000BEB3B4 /* Entity.h */,
 				3DE24057184DB9490028B1D7 /* main.cpp */,
+				3D8E4149184EB9F000BEB3B4 /* MovementSystem.cpp */,
+				3D8E414A184EB9F000BEB3B4 /* MovementSystem.h */,
+				3D8E414B184EB9F000BEB3B4 /* PlaneVertices.h */,
+				3D8E414C184EB9F000BEB3B4 /* PlayerInputSystem.cpp */,
+				3D8E414D184EB9F000BEB3B4 /* PlayerInputSystem.h */,
+				3D8E414E184EB9F000BEB3B4 /* ProjectManager.cpp */,
+				3D8E414F184EB9F000BEB3B4 /* ProjectManager.h */,
+				3D8E4150184EB9F000BEB3B4 /* RenderSystem.cpp */,
+				3D8E4151184EB9F100BEB3B4 /* RenderSystem.h */,
+				3D8E4152184EB9F100BEB3B4 /* ResourceManager.cpp */,
+				3D8E4153184EB9F100BEB3B4 /* ResourceManager.h */,
+				3D8E4154184EB9F100BEB3B4 /* Scene.cpp */,
+				3D8E4155184EB9F100BEB3B4 /* Scene.h */,
+				3D8E4156184EB9F100BEB3B4 /* ShaderData.cpp */,
+				3D8E4157184EB9F100BEB3B4 /* ShaderData.h */,
+				3D8E4158184EB9F100BEB3B4 /* ShaderInterface.cpp */,
+				3D8E4159184EB9F100BEB3B4 /* ShaderInterface.h */,
+				3D8E415A184EB9F100BEB3B4 /* ShaderLoader.cpp */,
+				3D8E415B184EB9F100BEB3B4 /* ShaderLoader.h */,
+				3D8E4180184EBF6600BEB3B4 /* SquareVertices.h */,
+				3D8E415E184EB9F100BEB3B4 /* Vector3.cpp */,
+				3D8E415F184EB9F100BEB3B4 /* Vector3.h */,
+				3D8E4160184EB9F100BEB3B4 /* Vector4.cpp */,
+				3D8E4161184EB9F100BEB3B4 /* Vector4.h */,
+				3D8E4162184EB9F100BEB3B4 /* VertexBuffer.cpp */,
+				3D8E4163184EB9F100BEB3B4 /* VertexBuffer.h */,
+				3D8E4164184EB9F100BEB3B4 /* VertexData.h */,
+				3D8E4145184EB9F000BEB3B4 /* ColorShader.fsh */,
+				3D8E4146184EB9F000BEB3B4 /* ColorShader.vsh */,
+				3D8E415C184EB9F100BEB3B4 /* SimpleLightShader.fsh */,
+				3D8E415D184EB9F100BEB3B4 /* SimpleLightShader.vsh */,
 				3DE24059184DB9490028B1D7 /* CPSC_486_Assign_2.1 */,
 			);
 			path = CPSC_486_Assign_2;
@@ -117,7 +225,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8E416A184EB9F100BEB3B4 /* PlayerInputSystem.cpp in Sources */,
+				3D8E4175184EB9F100BEB3B4 /* Vector4.cpp in Sources */,
+				3D8E416C184EB9F100BEB3B4 /* RenderSystem.cpp in Sources */,
+				3D8E4169184EB9F100BEB3B4 /* MovementSystem.cpp in Sources */,
+				3D8E4170184EB9F100BEB3B4 /* ShaderInterface.cpp in Sources */,
+				3D8E4176184EB9F100BEB3B4 /* VertexBuffer.cpp in Sources */,
+				3D8E4174184EB9F100BEB3B4 /* Vector3.cpp in Sources */,
+				3D8E416F184EB9F100BEB3B4 /* ShaderData.cpp in Sources */,
 				3DE24058184DB9490028B1D7 /* main.cpp in Sources */,
+				3D8E416D184EB9F100BEB3B4 /* ResourceManager.cpp in Sources */,
+				3D8E416E184EB9F100BEB3B4 /* Scene.cpp in Sources */,
+				3D8E4171184EB9F100BEB3B4 /* ShaderLoader.cpp in Sources */,
+				3D8E4165184EB9F100BEB3B4 /* CameraSystem.cpp in Sources */,
+				3D8E416B184EB9F100BEB3B4 /* ProjectManager.cpp in Sources */,
+				3D8E4168184EB9F100BEB3B4 /* Entity.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +317,15 @@
 		3DE2405E184DB9490028B1D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"addGLFW/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					addGLFW/lib/,
+					"/Users/darkhelmet125/Documents/Fall\\ Semester\\ 2013/CPSC\\ 486/Assignments/CPSC_486_Assign_2/addGLFW/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -202,6 +333,15 @@
 		3DE2405F184DB9490028B1D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"addGLFW/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					addGLFW/lib/,
+					"/Users/darkhelmet125/Documents/Fall\\ Semester\\ 2013/CPSC\\ 486/Assignments/CPSC_486_Assign_2/addGLFW/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -225,6 +365,7 @@
 				3DE2405F184DB9490028B1D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
