@@ -29,6 +29,7 @@
 		3D8E4182184EC04100BEB3B4 /* ColorShader.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E4146184EB9F000BEB3B4 /* ColorShader.vsh */; };
 		3D8E4183184EC04100BEB3B4 /* SimpleLightShader.fsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E415C184EB9F100BEB3B4 /* SimpleLightShader.fsh */; };
 		3D8E4184184EC04100BEB3B4 /* SimpleLightShader.vsh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D8E415D184EB9F100BEB3B4 /* SimpleLightShader.vsh */; };
+		3DB9B50018505BC700C3572B /* Ray3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DB9B4FE18505BC700C3572B /* Ray3D.cpp */; };
 		3DE24058184DB9490028B1D7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DE24057184DB9490028B1D7 /* main.cpp */; };
 		3DE2405A184DB9490028B1D7 /* CPSC_486_Assign_2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DE24059184DB9490028B1D7 /* CPSC_486_Assign_2.1 */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,8 @@
 		3D8E417B184EBAC000BEB3B4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		3D8E417D184EBADA00BEB3B4 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = addGLFW/lib/libglfw3.a; sourceTree = "<group>"; };
 		3D8E4180184EBF6600BEB3B4 /* SquareVertices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareVertices.h; sourceTree = "<group>"; };
+		3DB9B4FE18505BC700C3572B /* Ray3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray3D.cpp; sourceTree = "<group>"; };
+		3DB9B4FF18505BC700C3572B /* Ray3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ray3D.h; sourceTree = "<group>"; };
 		3DE24054184DB9490028B1D7 /* CPSC_486_Assign_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPSC_486_Assign_2; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE24057184DB9490028B1D7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3DE24059184DB9490028B1D7 /* CPSC_486_Assign_2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CPSC_486_Assign_2.1; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				3D8E414D184EB9F000BEB3B4 /* PlayerInputSystem.h */,
 				3D8E414E184EB9F000BEB3B4 /* ProjectManager.cpp */,
 				3D8E414F184EB9F000BEB3B4 /* ProjectManager.h */,
+				3DB9B4FE18505BC700C3572B /* Ray3D.cpp */,
+				3DB9B4FF18505BC700C3572B /* Ray3D.h */,
 				3D8E4150184EB9F000BEB3B4 /* RenderSystem.cpp */,
 				3D8E4151184EB9F100BEB3B4 /* RenderSystem.h */,
 				3D8E4152184EB9F100BEB3B4 /* ResourceManager.cpp */,
@@ -238,6 +243,7 @@
 				3D8E416E184EB9F100BEB3B4 /* Scene.cpp in Sources */,
 				3D8E4171184EB9F100BEB3B4 /* ShaderLoader.cpp in Sources */,
 				3D8E4165184EB9F100BEB3B4 /* CameraSystem.cpp in Sources */,
+				3DB9B50018505BC700C3572B /* Ray3D.cpp in Sources */,
 				3D8E416B184EB9F100BEB3B4 /* ProjectManager.cpp in Sources */,
 				3D8E4168184EB9F100BEB3B4 /* Entity.cpp in Sources */,
 			);
