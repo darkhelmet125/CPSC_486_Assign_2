@@ -30,7 +30,7 @@ Scene::Scene()
     square1->setScaleVelocity(makeVector3(0.0f, 0.0f, 0.0f));
     _children->push_back(square1);
     
-    Entity *square2 = new Entity(resourceManager->getVertexBufferArray()->at(1), makeVector3(0.89f, 0.0f, 0.0f));
+    Entity *square2 = new Entity(resourceManager->getVertexBufferArray()->at(1), makeVector3(0.89f, 0.1f, 0.0f));
     square2->setRotation(makeVector3(0.0f, 0.0f, 0.0f));
     square2->setScale(makeVector3(0.1f, 0.1f, 0.1f));
     square2->setVelocity(makeVector3(0.01f, 0.01f, 0.0f));
@@ -38,7 +38,7 @@ Scene::Scene()
     square2->setScaleVelocity(makeVector3(0.0f, 0.0f, 0.0f));
     _children->push_back(square2);
     
-    Entity *square3 = new Entity(resourceManager->getVertexBufferArray()->at(2), makeVector3(-0.89f, 0.0f, 0.0f));
+    Entity *square3 = new Entity(resourceManager->getVertexBufferArray()->at(2), makeVector3(-0.89f, 0.1f, 0.0f));
     square3->setRotation(makeVector3(0.0f, 0.0f, 0.0f));
     square3->setScale(makeVector3(0.1f, 0.1f, 0.1f));
     square3->setVelocity(makeVector3(0.01f, 0.01f, 0.0f));
@@ -46,7 +46,7 @@ Scene::Scene()
     square3->setScaleVelocity(makeVector3(0.0f, 0.0f, 0.0f));
     _children->push_back(square3);
     
-    Entity *square4 = new Entity(resourceManager->getVertexBufferArray()->at(3), makeVector3(0.0f, 0.89f, 0.0f));
+    Entity *square4 = new Entity(resourceManager->getVertexBufferArray()->at(3), makeVector3(0.1f, 0.89f, 0.0f));
     square4->setRotation(makeVector3(0.0f, 0.0f, 0.0f));
     square4->setScale(makeVector3(0.1f, 0.1f, 0.1f));
     square4->setVelocity(makeVector3(0.01f, 0.01f, 0.0f));
@@ -54,7 +54,7 @@ Scene::Scene()
     square4->setScaleVelocity(makeVector3(0.0f, 0.0f, 0.0f));
     _children->push_back(square4);
     
-    Entity *square5 = new Entity(resourceManager->getVertexBufferArray()->at(4), makeVector3(0.0f, -0.89f, 0.0f));
+    Entity *square5 = new Entity(resourceManager->getVertexBufferArray()->at(4), makeVector3(0.1f, -0.89f, 0.0f));
     square5->setRotation(makeVector3(0.0f, 0.0f, 0.0f));
     square5->setScale(makeVector3(0.1f, 0.1f, 0.1f));
     square5->setVelocity(makeVector3(0.01f, 0.01f, 0.0f));

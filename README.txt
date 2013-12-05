@@ -18,7 +18,9 @@ Unimplemented features:
 	
 
 Notes:
-	Assignment compiles with 1 warning.
-	Warnings:
-		-'gluLookat' is deprecated as of 10.9, use GLKMatrix4MakeLookAt
+Assignment compiles with 1 warning.
+Warnings:
+	-'gluLookat' is deprecated as of 10.9, use GLKMatrix4MakeLookAt
 I tried to implement the GLKMatrix4 functions from the GLKit.framework and it broke my program so it was not included.
+There is a slight glitch where occassionally squares will not bounce off of walls but move along them. After some distance they bounce off correctly and it functions as normal.
+The program also stutters a bit so it's not as smooth as it should be.

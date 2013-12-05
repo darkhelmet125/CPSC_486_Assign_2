@@ -98,7 +98,6 @@ ResourceManager::ResourceManager()
                                              NULL,
                                              NULL);
     _vertexBufferArray->push_back(square5);
-    
 }
 
 ResourceManager::~ResourceManager()
