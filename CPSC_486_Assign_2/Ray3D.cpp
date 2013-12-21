@@ -11,7 +11,12 @@
 //private
 
 //public
-bool Ray3D::rayIntersection()
+Ray3D::Ray3D()
 {
-    return true;
+    
+}
+
+Ray3D::~Ray3D()
+{
+    
 }

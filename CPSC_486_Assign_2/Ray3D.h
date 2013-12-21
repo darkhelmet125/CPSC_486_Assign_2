@@ -16,12 +16,14 @@
 class Ray3D
 {
 private:
-    Vector3 origin[3];
-    Vector3 direction[3];
     Entity* _entity;
     
 public:
-    bool rayIntersection();
+    Vector3 origin[3];
+    Vector3 direction[3];
+    Vector3 position[3];
+    Ray3D();
+    ~Ray3D();
 };
 
 #endif /* defined(__CPSC_486_Assign_2__Ray3D__) */

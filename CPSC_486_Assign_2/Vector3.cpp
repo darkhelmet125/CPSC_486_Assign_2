@@ -18,7 +18,7 @@ Vector3 makeVector3(GLfloat x, GLfloat y, GLfloat z)
     return newVector;
 }
 
-Vector3 addVector3(Vector3 vectorA, Vector3 vectorB)
+Vector3 addVector3(const Vector3& vectorA, const Vector3& vectorB)
 {
     Vector3 newVector;
     newVector.x = vectorA.x + vectorB.x;
@@ -26,4 +26,9 @@ Vector3 addVector3(Vector3 vectorA, Vector3 vectorB)
     newVector.z = vectorA.z + vectorB.z;
 
     return newVector;
+}
+
+float dot(Vector3 vectorA, Vector3 vectorB)
+{
+    return ((vectorA.x*vectorB.x)+(vectorA.y*vectorB.y)+(vectorA.z*vectorB.z));
 }

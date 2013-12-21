@@ -8,6 +8,12 @@
 
 #include "RenderSystem.h"
 #include "ShaderInterface.h"
+#include "Ray3D.h"
+
+//other
+void perp(float* in, float* out);
+int whichSide(Entity& s, Ray3D& r);
+bool testIntersection(Entity& a, Entity& b);
 
 //private
 RenderSystem::RenderSystem(): _window(glfwGetCurrentContext()),
@@ -122,3 +128,45 @@ void RenderSystem::destroyRenderSystem()
     RenderSystem *renderSystem = &getRenderSystem();
     delete renderSystem;
 }
+
+/*
+void perp(float* in, float* out)
+{
+    float temp = in[0];
+    out[0] = -in[1];
+    out[1] = temp;
+}
+
+int whichSide(Entity& s, Ray3D& r)
+{
+    int positive, negative;
+    positive = negative = 0;
+    float t;
+    for(int i = 0; i<4; ++i)
+    {
+        t = dot(r.direction, (s.getVertexBuffer()->at(i) - r.position));
+        if(t>0)
+            ++positive;
+        else if(t<0)
+            ++negative;
+        if(positive && negative)
+            return 0;
+    }
+    return (positive?1:-1);
+}
+
+bool testIntersection(Entity& a, Entity& b)
+{
+    for (int i=0, j=3; i<4; ++i)
+    {
+        if(whichSide(b, a.ray[i]) > 0)
+            return false;
+    }
+    for (int i=0; i<4; ++i)
+    {
+        if(whichSide(a, b.ray[i]) > 0)
+            return false;
+    }
+    return true;
+}
+*/
